@@ -1,0 +1,38 @@
+a {
+  color: black;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+ol {
+  border-right: 1px solid gray;
+  width: 75px;
+  margin: 0;
+  padding: 30px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid #article {
+  /*id값을 명시했기 때문에 마지막꺼 하나만 해도되지만 명시하기위해 */
+  padding-left: 4px;
+}
+body {
+  margin: 0;
+}
+@media (max-width: 800px) {
+  #grid {
+    display: block;
+  }
+  ol {
+    border-right: none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
